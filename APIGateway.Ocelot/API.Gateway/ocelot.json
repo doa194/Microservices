@@ -1,0 +1,53 @@
+// Ocelot API Gateway configuration file
+
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/", // Root path for the API Gateway
+      "DownstreamScheme": "https", // Use HTTPS for downstream requests
+      "DownstreamHostAndPorts": [
+        {
+          // Host and port of the downstream service
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/api1/{everything}", // Upstream path for the API Gateway
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ], // Allowed HTTP methods
+      "AuthenticationOptions": {
+        "AllowedScopes": [],
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "Role": "Administrator" // Require the user to have the 'Administrator' role to access this route
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/", // Path for the second downstream service
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001 // Port for the second service
+        }
+      ],
+      "UpstreamPathTemplate": "/api2/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ] // Allowed HTTP methods for the second service
+    },
+    {
+      "DownstreamPathTemplate": "/", // Path for the third downstream service
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002 // Port for the third service
+        }
+      ],
+      "UpstreamPathTemplate": "/api3/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ] // Allowed HTTP methods for the third service
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000" // Base URL for the API Gateway. Used for routing
+  }
+}

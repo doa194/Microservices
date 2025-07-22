@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Resiliency.CircuitBreaker", "Microservices.Resiliency.CircuitBreaker\Microservices.Resiliency.CircuitBreaker.csproj", "{5C1C2A9B-3DD1-44D8-BE82-AA6D12F3C0CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetService", "TargetService\TargetService.csproj", "{3486DF47-7B8A-4EA8-9D0B-77C9ECF4A252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Resiliency.Retry", "Microservices.Resiliency.Retry\Microservices.Resiliency.Retry.csproj", "{55E8A403-7C48-401C-9EC1-1CD791382793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Resiliency.Timeout", "Microservices.Resiliency.Timeout\Microservices.Resiliency.Timeout.csproj", "{14E39728-09A0-4AF5-876E-E544E6DF9FD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Resiliency.Fallback", "Microservices.Resiliency.Fallback\Microservices.Resiliency.Fallback.csproj", "{AF662EE0-55A5-44A5-B3C9-11F6CE429175}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C1C2A9B-3DD1-44D8-BE82-AA6D12F3C0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1C2A9B-3DD1-44D8-BE82-AA6D12F3C0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1C2A9B-3DD1-44D8-BE82-AA6D12F3C0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1C2A9B-3DD1-44D8-BE82-AA6D12F3C0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3486DF47-7B8A-4EA8-9D0B-77C9ECF4A252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3486DF47-7B8A-4EA8-9D0B-77C9ECF4A252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3486DF47-7B8A-4EA8-9D0B-77C9ECF4A252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3486DF47-7B8A-4EA8-9D0B-77C9ECF4A252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55E8A403-7C48-401C-9EC1-1CD791382793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E8A403-7C48-401C-9EC1-1CD791382793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E8A403-7C48-401C-9EC1-1CD791382793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E8A403-7C48-401C-9EC1-1CD791382793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E39728-09A0-4AF5-876E-E544E6DF9FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E39728-09A0-4AF5-876E-E544E6DF9FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E39728-09A0-4AF5-876E-E544E6DF9FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E39728-09A0-4AF5-876E-E544E6DF9FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF662EE0-55A5-44A5-B3C9-11F6CE429175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF662EE0-55A5-44A5-B3C9-11F6CE429175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF662EE0-55A5-44A5-B3C9-11F6CE429175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF662EE0-55A5-44A5-B3C9-11F6CE429175}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDD1AECF-56B8-441D-A6F1-7DD97E6D2030}
+	EndGlobalSection
+EndGlobal
